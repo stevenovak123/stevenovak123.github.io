@@ -1,0 +1,30 @@
+:root{
+    --blue-main:#0068b7;
+    --blue-alpha:hsl(192, 100%, 68%);
+    --blue-beta:#00A0e9;
+}
+nav{
+    background-color:var(--blue-main)
+
+}
+nav a {
+    margin: 10px;
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+#profile {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;   
+  }
+  #Welcome, #greeting{
+      padding-top: 20px;
+      padding-bottom: 20px;
+      align-content: center;
+      text-align: center;
+      background-color:var(--blue-beta);
+    color: white;
+    }
