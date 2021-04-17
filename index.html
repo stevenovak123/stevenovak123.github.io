@@ -27,12 +27,12 @@
                     </li>
                     <li class="nav-item">
                         <a href="#Language" class="navbar-nav">Languages</a>
-
                     </li>
                     <li class="nav-item">
                         <a href="#About" class="navbar-nav">About</a>
 
                     </li>
+
                 </ul>
             </div>
         </nav>
@@ -47,27 +47,37 @@
     <hr>
     <div id="#Language">
         <h1 id="Language">Languages & Frameworks</h1>
-        <h4 style="text-align: center;">Click on the Image to find out more</h4>
+        
         <!-- Button trigger modal -->
     </div>
+
     <div id="modals">
         <div class="row">
             <div class="col-sm-4">
-                <input type="image" src="resources/HTML5.png" data-toggle="modal" data-target="#html">
+                <div class="card" style="width: 400px;
+                box-shadow:5px 10px  #e6e8e8 ;">
+<img class="card-img-top"><input type="image" src="resources/HTML5.png" data-toggle="modal" data-target="#html">
+</input>
+</div>
+</div>
+
+<div class="col-sm-4">
+    <div class="card" style="width: 400px; height: 230px;
+                box-shadow:5px 10px  #e6e8e8 ;"> 
+                 <img class="card-img-top"><input type="image" src="resources/react-native-blo.png" data-toggle="modal" data-target="#react">
                 </input>
             </div>
-            <div class="col-sm-4">
-                <input type="image" src="resources/react-native-blo.png" data-toggle="modal" data-target="#react">
-                </input>
-            </div>
-        
-        <div class="col-sm-4">
-         
-            <input type="image" src="resources/Python-Logo-Free-PNG-Image.png" data-toggle="modal"
-                data-target="#python">
         </div>
+        <div class="col-sm-4">
+            <div class="card" style="width: 400px;
+                box-shadow:5px 10px  #e6e8e8 ; height: 230px;">
+<img class="card-img-top" >
+            <input type="image" src="resources/Python-Logo-Free-PNG-Image.png" data-toggle="modal"
+            data-target="#python">
         </input>
     </div>
+</div>
+</div>
 </div>
 
 
@@ -153,17 +163,18 @@
             </div>
         </div>
     </div>
-    <hr>
     </div>
-    <footer id="About">
+    <div style="padding-top: 10px;"></div>
+    <div id="About">
+        
         <div class="row">
-            <div class="col-sm-4">
-                <h3>Contact</h3>
-                <ul style="list-style: none; display: inline;">
+            <div class="col">
+                <h3> &nbsp &nbsp Contact</h3>
+                <ul style="list-style: none;">
                     <li style="display: inline;"><a href="mailto:stevenovak0802@gmail.com" target="_blank"><img class="Glyph"src="resources/Email.svg" alt="Link to Steve' Email"></a></li>
                 </ul>
             </div>
-            <div class="col-sm-4">
+            <div class="col">
                 <h3>Socials</h3>
                 <ul style="list-style: none; display: inline;">
                     <li style="display: inline;"><a href="https://www.linkedin.com/in/stevenovak123/" target="_blank"><img class="Glyph"src="resources/linkedin.svg" alt="Link to Steve' LinkedIn"></a></li>
@@ -173,9 +184,8 @@
                 </ul>
             </div>
         </div>
+     </div>
         
-        </div>
-    </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>
