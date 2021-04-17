@@ -3,6 +3,10 @@
     --alpha:#d0e1f9;
     --beta:#ffffff;
 }
+html ,body{
+    max-width: 100%;
+    overflow-x: hidden;
+}
 header , footer{
     background-color:var(--main);
     color: var(--beta);
