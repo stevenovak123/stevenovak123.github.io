@@ -14,30 +14,31 @@ nav a {
     margin: 10px;
     font-family: 'Bebas Neue', cursive;
     color: var(--beta);
-    padding: 10px;
+    padding: 10px,0,0,0;
     text-decoration: none;
+
 }
 #profile {
     display: block;
     margin-left: auto;
     margin-right: auto;
     height: auto;   
-  }
-  #Welcome, #greeting{
-      padding-top: 20px;
-      padding-bottom: 20px;
+}
+#Welcome {
+  padding-top: 20px;
+  padding-bottom: 20px;
       align-content: center;
       text-align: center;
       background-color:var(--alpha);
     color: black;
     }
+    
  hr{
         padding: 0;
         margin: 0;    
     }
 #Language{
-    margin-bottom: 20px;
-
+padding-top: 20px; ;
     background-color: var(--beta);
     text-align: center;
     text-transform: capitalize;}
@@ -56,7 +57,10 @@ input{
     margin-left: auto;
     margin-right: auto;
 }
-
-#about{
+footer{
     text-align: center;
 }
+.Glyph{
+    width: 10%;
+    cursor: pointer;
+}   
