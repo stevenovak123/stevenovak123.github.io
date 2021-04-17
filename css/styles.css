@@ -1,16 +1,19 @@
 :root{
-    --blue-main:#0068b7;
-    --blue-alpha:hsl(192, 100%, 68%);
-    --blue-beta:#00A0e9;
+    --main:#4d648d;
+    --alpha:#d0e1f9;
+    --beta:#ffffff;
+}
+header , footer{
+    background-color:var(--main);
+    color: var(--beta);
 }
 nav{
-    background-color:var(--blue-main)
-
+    position: fixed;
 }
 nav a {
     margin: 10px;
     font-family: 'Bebas Neue', cursive;
-    color: white;
+    color: var(--beta);
     padding: 10px;
     text-decoration: none;
 }
@@ -25,6 +28,35 @@ nav a {
       padding-bottom: 20px;
       align-content: center;
       text-align: center;
-      background-color:var(--blue-beta);
-    color: white;
+      background-color:var(--alpha);
+    color: black;
     }
+ hr{
+        padding: 0;
+        margin: 0;    
+    }
+#Language{
+    margin-bottom: 20px;
+
+    background-color: var(--beta);
+    text-align: center;
+    text-transform: capitalize;}
+#modals{
+    padding-left: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+input{
+    height: auto;
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#about{
+    text-align: center;
+}
