@@ -82,12 +82,12 @@ input {
 
 
 #About {
-    background-color: #4d648d;
+    background-color: hsl(218, 29%, 43%);
     text-align: center;
     margin-bottom: 0;
     padding-bottom: 0;
     height: 100px;
-    color: #d0e1f9;
+    color: hsl(215, 77%, 90%);
 }
 
 .Glyph {
