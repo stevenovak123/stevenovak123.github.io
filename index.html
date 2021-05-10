@@ -2,197 +2,181 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Bootstrap CSS -->
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-    </style>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="css/styles.css">
-    <title>Steve Dsouza</title>
+  <link href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap" rel="stylesheet" />
+  <title>Steve Dsouza</title>
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-dark">
-            <div class="container">
-                <a href="#Welcome" class="navbar-brand"><img class="imgL"src="resources/logo.png" style="width: 30%;"></a>
-                <ul class="nav justify content-end">
-                    <li class="nav-item">
-                        <a href="#Language" class="navbar-nav">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#Language" class="navbar-nav">Languages</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#About" class="navbar-nav">About</a>
 
-                    </li>
-
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <div id="Welcome">
-        <picture>  
-            <img src="resources/Steve.jpg" alt=" A picture of me" id="profile">
-        </picture>
-        <h1 id="greeting"><strong>Hi! I am Steve Dsouza</strong></h1>
-        <h4>Aspiring Full Stack Web Developer</h4>
+  <nav id="navbar" class="nav">
+    <ul class="nav-list">
+      <li>
+        <a href="#Welcome">About</a>
+      </li>
+      <li>
+        <a href="#projects">Work</a>
+      </li>
+      <li>
+        <a href="#contact">Contact</a>
+      </li>
+    </ul>
+  </nav>
+  <div id="Welcome">
+    <picture>
+      <img src="resources/Steve.jpg" id="welcome-section" alt="A picture of me">
+    </picture>
+    <div class="welcome">
+      <h1><strong>Hey I am Steve</strong></h1>
+      <h4>Aspiring Full-Stack Web Developer!</h4>
+      </class>
     </div>
     <hr>
-    <div id="#Language">
-        <h1 id="Language">Languages & Frameworks</h1>
-        
-        <!-- Button trigger modal -->
-    </div>
-    <div id="modals">
+    <div id="projects">
+
+      <h2 class="project-header">Projects and Certifications</h2>
+
+      <div class="projects">
         <div class="row">
-            <div class="col-sm-4">
-                <div class="card" style="width: 400px;
-                box-shadow:5px 10px  #8a9696 ;">
-<img class="card-img-top"><input type="image" src="resources/HTML5.png" data-toggle="modal" data-target="#html">
-</input>
-</div>
-</div>
+          <div class="col-sm-4">
 
-<div class="col-sm-4">
-    <div class="card" style="width: 400px; height: 230px;
-                box-shadow:5px 10px  #8a9696 ;"> 
-                 <img class="card-img-top"><input type="image" src="resources/react-native-blo.png" data-toggle="modal" data-target="#react">
-                </input>
-            </div>
+            <a class="btn" href="#html" target="_blank" data-toggle="modal">
+
+              <img class="project-image" src="resources/HTML5.png"
+                alt="Details about my HTML Certifcations and Projects.Click to know more"></a>
+          </div>
         </div>
-        <div class="col-sm-4">
-            <div class="card" style="width: 400px;
-                box-shadow:5px 10px  #8a9696 ; height: 230px;">
-<img class="card-img-top" >
-            <input type="image" src="resources/Python-Logo-Free-PNG-Image.png" data-toggle="modal"
-            data-target="#python">
-        </input>
-    </div>
-</div>
-</div>
-</div>
+        <div class="row">
+          <div class="col-sm-4">
+            <a data-toggle="modal" href="#react" target="_blank" class="btn">
+              <img class="project-image" src="resources/react-native-blo.png"
+                alt="Details about my React and Other JS frameworks certifications.Click to know more"></a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4">
 
-
-
-
-    <!-- Modal1 html  -->
-    <div class="modal fade" id="html" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+            <a data-toggle="modal" href="#python" target="_blank" class="btn">
+              <img class="project-image" src="resources/Python-Logo-Free-PNG-Image.png"
+                alt="Details about Python and Django certifications.Click to know more"></a>
+          </div>
+        </div>
+      </div>
+      <!-- Modal1 html  -->
+      <div class="modal fade" id="html" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
         aria-hidden="true">
         <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle">HTML CSS & JS projects and certifications</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <p>Certified Responsive Web Developer From FreeCodeCamp (FCC)</p>
-                    <hr>
-                    <p>Video links to my projects will be available here</p>
-                    <hr>
-                    <p>Click <a href="https://www.freecodecamp.org/certification/stevenovak123/responsive-web-design"
-                            target="_blank" alt="">here</a>
-                        for the Responsive Web Dev certificate</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">HTML CSS & JS projects and certifications</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
             </div>
+            <div class="modal-body">
+              <p>Certified Responsive Web Developer From FreeCodeCamp (FCC)</p>
+              <hr>
+              <p>Video links to my projects will be available here</p>
+              <hr>
+              <p>Click <a href="https://www.freecodecamp.org/certification/stevenovak123/responsive-web-design"
+                  target="_blank" alt="">here</a>
+                for the Responsive Web Dev certificate</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
     <!-- Modal2 react  -->
     <div class="modal fade" id="react" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle">React & Angular </h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <p>Learning React and Angular Web Dev frameworks</p>
-                    <hr>
-                    <p>Video links to my projects will be available here</p>
-                    <hr>
-                    <p>Click <a href="#" target="_blank" alt="">here</a>
-                        for the React certificate.<br>
-                        Click <a href="#" target="_blank" alt="">here</a>
-                        for the Angular certificate</p>
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">React & Angular </h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Learning React and Angular Web Dev frameworks</p>
+            <hr>
+            <p>Video links to my projects will be available here</p>
+            <hr>
+            <p>Click <a href="#" target="_blank" alt="">here</a>
+              for the React certificate.<br>
+              Click <a href="#" target="_blank" alt="">here</a>
+              for the Angular certificate</p>
 
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
-            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
         </div>
+      </div>
     </div>
     <!-- modal 3 python -->
     <div class="modal fade" id="python" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle">Python</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <p>Learning Python and Django Framework</p>
-                    <hr>
-                    <p>Video links to my projects will be available here</p>
-                    <hr>
-                    <p>Click <a href=" https://www.udemy.com/certificate/UC-46bfc4ee-6d05-42a9-83d7-0daccd57c928/"
-                            target="_blank" alt="">here</a>
-                        for the Python certificate</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
-            </div>
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Python</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Learning Python and Django Framework</p>
+            <hr>
+            <p>Video links to my projects will be available here</p>
+            <hr>
+            <p>Click <a href=" https://www.udemy.com/certificate/UC-46bfc4ee-6d05-42a9-83d7-0daccd57c928/"
+                target="_blank" alt="">here</a>
+              for the Python certificate</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
+<hr>
+   
+  <section id="contact" class="contact-section">
+ 
+    <div class="contact-links">
+      <a id="profile-link" href="mailto:stevenovak0802@gmail.com" target="_blank"><img class="Glyph"src="resources/Email.svg" alt="Link to Steve' Email"></a>
+      <a href="https://www.linkedin.com/in/stevenovak123/" target="_blank"><img class="Glyph"src="resources/linkedin.svg" alt="Link to Steve' LinkedIn"></a>
+      <a href="https://github.com/stevenovak123" target="_blank"><img class="Glyph"src="resources/github.svg" alt="Link to Steve' GitHub"></a>
+      <a href="https://www.instagram.com/stevenovak123/" target="_blank"><img class="Glyph"src="resources/instagram.svg" alt="Link to Steve' instagram"></a>
+      <a href="https://www.youtube.com/channel/UC0DHNZY4vhhcrK7vvbBqBUQ" target="_blank"><img class="Glyph"src="resources/Youtube.svg" alt="Link to Youtube channel"></a>
     </div>
-    <div style="padding-top: 10px;"></div>
-    <div id="About">
-        
-        <div class="row">
-            <div class="col">
-                <h3> &nbsp &nbsp Contact</h3>
-                <ul style="list-style: none;">
-                    <li style="display: inline;"><a href="mailto:stevenovak0802@gmail.com" target="_blank"><img class="Glyph"src="resources/Email.svg" alt="Link to Steve' Email"></a></li>
-                </ul>
-            </div>
-            <div class="col">
-                <h3>Socials</h3>
-                <ul style="list-style: none; display: inline;">
-                    <li style="display: inline;"><a href="https://www.linkedin.com/in/stevenovak123/" target="_blank"><img class="Glyph"src="resources/linkedin.svg" alt="Link to Steve' LinkedIn"></a></li>
-                    <li style="display: inline;"><a href="https://github.com/stevenovak123" target="_blank"><img class="Glyph"src="resources/github.svg" alt="Link to Steve' GitHub"></a></li>
-                    <li style="display: inline;"><a href="https://www.instagram.com/stevenovak123/" target="_blank"><img class="Glyph"src="resources/instagram.svg" alt="Link to Steve' instagram"></a></li>
-                    <li style="display: inline;"><a href="https://www.youtube.com/channel/UC0DHNZY4vhhcrK7vvbBqBUQ" target="_blank"><img class="Glyph"src="resources/Youtube.svg" alt="Link to Youtube channel"></a></li>
-                </ul>
-            </div>
-        </div>
-     </div>
-        
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
-    </script>
+  </section>
+   
+
+
+  <!--Bootstrap JS Scripts 
+      used modals from the bootstrap library for the Image buttons  -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+  </script>
 </body>
 
 </html>
